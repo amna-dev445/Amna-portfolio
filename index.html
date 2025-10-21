@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amna | Front-end Developer</title>
+  <style>
+    :root{--bg:#f7fbff;--accent:#2563eb;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f172a}
+    .container{max-width:1100px;margin:40px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:30px;margin:36px 0;align-items:center}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{color:var(--muted);margin:12px 0 18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .secondary{background:transparent;border:1px solid #e6eefc;color:var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none}
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(8,30,63,0.06)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .skill{background:#f1f7ff;padding:8px 12px;border-radius:999px;font-weight:600;color:var(--accent)}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .proj-img{height:160px;border-radius:10px;background:linear-gradient(135deg,#eef2ff,#fff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+    .proj-title{margin:12px 0 6px;font-weight:700}
+    footer{margin:50px 0 30px;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .projects-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      header{flex-direction:column;align-items:flex-start}
+      .projects-grid{grid-template-columns:1fr}
+      .logo{width:48px;height:48px}
+      .hero h1{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AM</div>
+        <div>
+          <div style="font-weight:700">Amna Kamran</div>
+          <div style="font-size:13px;color:var(--muted)">Front-end Developer • Pakistan</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hi — I’m Amna. I convert Figma / PSD / XD designs into responsive, pixel-perfect HTML websites.</h1>
+        <p>I build fast, accessible and mobile-friendly front-ends using HTML, CSS, JavaScript and Bootstrap. Your vision, my code — let’s build something amazing together.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="secondary" href="#projects">See Projects</a>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <div style="font-weight:700">Quick facts</div>
+          <div style="color:var(--muted);margin-top:8px">Experience: PSD/Figma to HTML • Tools: HTML, CSS, JS, Bootstrap • Delivery: Clean, commented code</div>
+          <div class="skills" id="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div style="font-weight:700">Contact</div>
+          <div style="color:var(--muted);margin:10px 0">Email: <a href="mailto:amna@example.com">amna@example.com</a></div>
+          <div style="color:var(--muted);font-size:13px">Fiverr: <a href="#">amnawebwizard</a></div>
+
+          <div style="margin-top:12px">
+            <div style="font-weight:700;margin-bottom:8px">Availability</div>
+            <div style="color:var(--muted)">Part-time • Open for new projects</div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="card">
+          <div style="font-weight:700">Hire package (example)</div>
+          <div style="color:var(--muted);margin-top:8px">Basic: 1 page • 2 days • 2 revisions</div>
+          <div style="color:var(--muted);margin-top:6px">Standard: up to 3 pages • 1 day • 4 revisions</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin:0 0 8px">Projects</h2>
+      <div style="color:var(--muted);margin-bottom:12px">Selected Figma/PSD → HTML conversions and landing pages.</div>
+
+      <div class="projects-grid">
+        <div class="card">
+          <div class="proj-img">
+  <img src="Untitled design.jpg" alt="Clothing Store Website" style="width:100%;height:160px;object-fit:cover;border-radius:10px;">
+</div>
+
+          <div class="proj-title">Clothing Store Landing</div>
+          <div style="color:var(--muted);font-size:14px">Pixel-perfect conversion, responsive and optimized.</div>
+        </div>
+
+        <div class="card">
+  <div class="proj-img">
+    Project 2<br>
+    <small style="display:block;color:var(--muted)">Multi-page</small>
+  </div>
+  <div class="proj-title">Portfolio Website</div>
+  <div style="color:var(--muted);font-size:14px">
+    Minimal, fast, and accessible.
+  </div>
+</div>
+
+<div class="card">
+  <div class="proj-img">
+    Project 3<br>
+    <small style="display:block;color:var(--muted)">Landing</small>
+  </div>
+  <img src="Add a heading.jpg" alt="Clothing Store Website"
+       style="width:100%;height:160px;object-fit:cover;border-radius:10px;">
+  <div class="proj-title">Health Services Landing</div>
+  <div style="color:var(--muted);font-size:14px">
+    Bootstrap-based responsive layout with forms.
+  </div>
+</div>
+
+
+    <section style="margin-top:28px" id="contact">
+      <div class="card">
+        <h3 style="margin:0 0 8px">Get in touch</h3>
+        <p style="color:var(--muted);margin:0 0 12px">Send me your Figma, PSD, or XD file and I’ll convert it into a clean, responsive HTML website.</p>
+        <p style="margin:0 0 8px">Email: <a href="mailto:amna@example.com">amna@example.com</a></p>
+        <p style="margin:0 0 8px">Fiverr: <a href="#">/amnawebwizard</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Amna Kamran — Front-end Developer • Built with ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
